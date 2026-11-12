@@ -1,0 +1,1157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000950] (-) JobUnselected: {'identifier': 'autonomous_driving'}
+[0.001861] (-) JobUnselected: {'identifier': 'can'}
+[0.001960] (-) JobUnselected: {'identifier': 'car_control'}
+[0.002493] (-) JobUnselected: {'identifier': 'carla_msgs'}
+[0.004682] (-) JobUnselected: {'identifier': 'geicar_start'}
+[0.004884] (-) JobUnselected: {'identifier': 'imu_complementary_filter'}
+[0.005160] (-) JobUnselected: {'identifier': 'imu_filter_madgwick'}
+[0.005315] (-) JobUnselected: {'identifier': 'imu_tools'}
+[0.005408] (-) JobUnselected: {'identifier': 'joystick'}
+[0.005500] (-) JobUnselected: {'identifier': 'rviz_imu_plugin'}
+[0.005615] (-) JobUnselected: {'identifier': 'simulation'}
+[0.005709] (-) JobUnselected: {'identifier': 'system_check'}
+[0.005799] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.005891] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.078381] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.079462] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/Pi4_ros2_ws_Simon/ros2_ws/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/pi/Pi4_ros2_ws_Simon/install/interfaces'], 'cwd': '/home/pi/Pi4_ros2_ws_Simon/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.103 40398 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/ros2_ws/install/rviz_imu_plugin/lib:/home/pi/ros2_ws/install/interfaces/lib:/home/pi/ros2_ws/install/imu_filter_madgwick/lib:/home/pi/ros2_ws/install/carla_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/geicar_start:/home/pi/ros2_ws/install/system_check:/home/pi/ros2_ws/install/simulation:/home/pi/ros2_ws/install/safety_stop:/home/pi/ros2_ws/install/imu_tools:/home/pi/ros2_ws/install/rviz_imu_plugin:/home/pi/ros2_ws/install/obstacle_stop:/home/pi/ros2_ws/install/joystick:/home/pi/ros2_ws/install/car_control:/home/pi/ros2_ws/install/can:/home/pi/ros2_ws/install/interfaces:/home/pi/ros2_ws/install/imu_filter_madgwick:/home/pi/ros2_ws/install/imu_complementary_filter:/home/pi/ros2_ws/install/carla_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/Pi4_ros2_ws_Simon/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.103 40398 10.105.1.168 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/ros2_ws/install/obstacle_stop/lib/python3.10/site-packages:/home/pi/ros2_ws/install/joystick/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/carla_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/geicar_start:/home/pi/ros2_ws/install/system_check:/home/pi/ros2_ws/install/simulation:/home/pi/ros2_ws/install/safety_stop:/home/pi/ros2_ws/install/imu_tools:/home/pi/ros2_ws/install/rviz_imu_plugin:/home/pi/ros2_ws/install/joystick:/home/pi/ros2_ws/install/car_control:/home/pi/ros2_ws/install/can:/home/pi/ros2_ws/install/interfaces:/home/pi/ros2_ws/install/imu_filter_madgwick:/home/pi/ros2_ws/install/imu_complementary_filter:/home/pi/ros2_ws/install/carla_msgs:/home/pi/ros2_ws/install/obstacle_stop:/opt/ros/humble')]), 'shell': False}
+[0.099684] (-) TimerEvent: {}
+[0.201139] (-) TimerEvent: {}
+[0.301998] (-) TimerEvent: {}
+[0.403070] (-) TimerEvent: {}
+[0.504096] (-) TimerEvent: {}
+[0.605042] (-) TimerEvent: {}
+[0.705953] (-) TimerEvent: {}
+[0.807110] (-) TimerEvent: {}
+[0.908102] (-) TimerEvent: {}
+[1.009128] (-) TimerEvent: {}
+[1.110271] (-) TimerEvent: {}
+[1.211385] (-) TimerEvent: {}
+[1.312300] (-) TimerEvent: {}
+[1.413282] (-) TimerEvent: {}
+[1.514448] (-) TimerEvent: {}
+[1.615298] (-) TimerEvent: {}
+[1.716170] (-) TimerEvent: {}
+[1.802705] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.816410] (-) TimerEvent: {}
+[1.917165] (-) TimerEvent: {}
+[2.018072] (-) TimerEvent: {}
+[2.119285] (-) TimerEvent: {}
+[2.220432] (-) TimerEvent: {}
+[2.321531] (-) TimerEvent: {}
+[2.422354] (-) TimerEvent: {}
+[2.523341] (-) TimerEvent: {}
+[2.624262] (-) TimerEvent: {}
+[2.725276] (-) TimerEvent: {}
+[2.826372] (-) TimerEvent: {}
+[2.887133] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.926560] (-) TimerEvent: {}
+[2.948008] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.026743] (-) TimerEvent: {}
+[3.127448] (-) TimerEvent: {}
+[3.228157] (-) TimerEvent: {}
+[3.329051] (-) TimerEvent: {}
+[3.388298] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.414464] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.416705] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.419503] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.429188] (-) TimerEvent: {}
+[3.434461] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.529436] (-) TimerEvent: {}
+[3.630332] (-) TimerEvent: {}
+[3.731212] (-) TimerEvent: {}
+[3.822886] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.831372] (-) TimerEvent: {}
+[3.850457] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.851377] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.852959] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.898530] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.931519] (-) TimerEvent: {}
+[4.032161] (-) TimerEvent: {}
+[4.132816] (-) TimerEvent: {}
+[4.233441] (-) TimerEvent: {}
+[4.334100] (-) TimerEvent: {}
+[4.434987] (-) TimerEvent: {}
+[4.535710] (-) TimerEvent: {}
+[4.636321] (-) TimerEvent: {}
+[4.736961] (-) TimerEvent: {}
+[4.833139] (interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.4") found components: Interpreter \n'}
+[4.837151] (-) TimerEvent: {}
+[4.937917] (-) TimerEvent: {}
+[5.038649] (-) TimerEvent: {}
+[5.139356] (-) TimerEvent: {}
+[5.240087] (-) TimerEvent: {}
+[5.340859] (-) TimerEvent: {}
+[5.441561] (-) TimerEvent: {}
+[5.542221] (-) TimerEvent: {}
+[5.642912] (-) TimerEvent: {}
+[5.696255] (interfaces) StdoutLine: {'line': b'-- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.743079] (-) TimerEvent: {}
+[5.843743] (-) TimerEvent: {}
+[5.944499] (-) TimerEvent: {}
+[6.045245] (-) TimerEvent: {}
+[6.145915] (-) TimerEvent: {}
+[6.246597] (-) TimerEvent: {}
+[6.347248] (-) TimerEvent: {}
+[6.368837] (interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.447407] (-) TimerEvent: {}
+[6.451932] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.547588] (-) TimerEvent: {}
+[6.558200] (interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.647787] (-) TimerEvent: {}
+[6.694655] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.747960] (-) TimerEvent: {}
+[6.848671] (-) TimerEvent: {}
+[6.881648] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.948907] (-) TimerEvent: {}
+[7.049625] (-) TimerEvent: {}
+[7.150306] (-) TimerEvent: {}
+[7.250965] (-) TimerEvent: {}
+[7.351606] (-) TimerEvent: {}
+[7.416977] (interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.451760] (-) TimerEvent: {}
+[7.462778] (interfaces) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.551931] (-) TimerEvent: {}
+[7.652587] (-) TimerEvent: {}
+[7.753256] (-) TimerEvent: {}
+[7.853940] (-) TimerEvent: {}
+[7.954720] (-) TimerEvent: {}
+[8.055378] (-) TimerEvent: {}
+[8.156125] (-) TimerEvent: {}
+[8.256943] (-) TimerEvent: {}
+[8.264675] (interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.357116] (-) TimerEvent: {}
+[8.457807] (-) TimerEvent: {}
+[8.500798] (interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.557976] (-) TimerEvent: {}
+[8.658653] (-) TimerEvent: {}
+[8.759302] (-) TimerEvent: {}
+[8.859954] (-) TimerEvent: {}
+[8.884543] (interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.960137] (-) TimerEvent: {}
+[9.060845] (-) TimerEvent: {}
+[9.161548] (-) TimerEvent: {}
+[9.262271] (-) TimerEvent: {}
+[9.362960] (-) TimerEvent: {}
+[9.463833] (-) TimerEvent: {}
+[9.564504] (-) TimerEvent: {}
+[9.665192] (-) TimerEvent: {}
+[9.689211] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[9.765379] (-) TimerEvent: {}
+[9.866042] (-) TimerEvent: {}
+[9.966778] (-) TimerEvent: {}
+[10.067628] (-) TimerEvent: {}
+[10.168463] (-) TimerEvent: {}
+[10.269141] (-) TimerEvent: {}
+[10.369785] (-) TimerEvent: {}
+[10.470404] (-) TimerEvent: {}
+[10.571002] (-) TimerEvent: {}
+[10.671642] (-) TimerEvent: {}
+[10.772383] (-) TimerEvent: {}
+[10.873262] (-) TimerEvent: {}
+[10.974017] (-) TimerEvent: {}
+[11.075239] (-) TimerEvent: {}
+[11.119809] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[11.175393] (-) TimerEvent: {}
+[11.276112] (-) TimerEvent: {}
+[11.376788] (-) TimerEvent: {}
+[11.477452] (-) TimerEvent: {}
+[11.578191] (-) TimerEvent: {}
+[11.679011] (-) TimerEvent: {}
+[11.779657] (-) TimerEvent: {}
+[11.880273] (-) TimerEvent: {}
+[11.981028] (-) TimerEvent: {}
+[12.082053] (-) TimerEvent: {}
+[12.182770] (-) TimerEvent: {}
+[12.283587] (-) TimerEvent: {}
+[12.384871] (-) TimerEvent: {}
+[12.485684] (-) TimerEvent: {}
+[12.586430] (-) TimerEvent: {}
+[12.679275] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.686602] (-) TimerEvent: {}
+[12.787326] (-) TimerEvent: {}
+[12.887944] (-) TimerEvent: {}
+[12.988605] (-) TimerEvent: {}
+[13.089308] (-) TimerEvent: {}
+[13.189957] (-) TimerEvent: {}
+[13.238381] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.290122] (-) TimerEvent: {}
+[13.353372] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.4", minimum required is "3.6") \n'}
+[13.390277] (-) TimerEvent: {}
+[13.392268] (interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[13.490488] (-) TimerEvent: {}
+[13.543459] (interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.4", minimum required is "3.5") \n'}
+[13.544677] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[13.545376] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[13.546000] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[13.590628] (-) TimerEvent: {}
+[13.652373] (interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[13.690769] (-) TimerEvent: {}
+[13.791452] (-) TimerEvent: {}
+[13.884478] (interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[13.891599] (-) TimerEvent: {}
+[13.992262] (-) TimerEvent: {}
+[14.092939] (-) TimerEvent: {}
+[14.193609] (-) TimerEvent: {}
+[14.211577] (interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.225648] (interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.248092] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.293773] (-) TimerEvent: {}
+[14.394611] (-) TimerEvent: {}
+[14.495970] (-) TimerEvent: {}
+[14.503809] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[14.518068] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/Pi4_ros2_ws_Simon/build/interfaces\n'}
+[14.563651] (interfaces) CommandEnded: {'returncode': 0}
+[14.565494] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[14.568192] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/Pi4_ros2_ws_Simon/build/interfaces', '--', '-j4', '-l4'], 'cwd': '/home/pi/Pi4_ros2_ws_Simon/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.103 40398 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/ros2_ws/install/rviz_imu_plugin/lib:/home/pi/ros2_ws/install/interfaces/lib:/home/pi/ros2_ws/install/imu_filter_madgwick/lib:/home/pi/ros2_ws/install/carla_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/geicar_start:/home/pi/ros2_ws/install/system_check:/home/pi/ros2_ws/install/simulation:/home/pi/ros2_ws/install/safety_stop:/home/pi/ros2_ws/install/imu_tools:/home/pi/ros2_ws/install/rviz_imu_plugin:/home/pi/ros2_ws/install/obstacle_stop:/home/pi/ros2_ws/install/joystick:/home/pi/ros2_ws/install/car_control:/home/pi/ros2_ws/install/can:/home/pi/ros2_ws/install/interfaces:/home/pi/ros2_ws/install/imu_filter_madgwick:/home/pi/ros2_ws/install/imu_complementary_filter:/home/pi/ros2_ws/install/carla_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/Pi4_ros2_ws_Simon/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.103 40398 10.105.1.168 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/ros2_ws/install/obstacle_stop/lib/python3.10/site-packages:/home/pi/ros2_ws/install/joystick/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/carla_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/geicar_start:/home/pi/ros2_ws/install/system_check:/home/pi/ros2_ws/install/simulation:/home/pi/ros2_ws/install/safety_stop:/home/pi/ros2_ws/install/imu_tools:/home/pi/ros2_ws/install/rviz_imu_plugin:/home/pi/ros2_ws/install/joystick:/home/pi/ros2_ws/install/car_control:/home/pi/ros2_ws/install/can:/home/pi/ros2_ws/install/interfaces:/home/pi/ros2_ws/install/imu_filter_madgwick:/home/pi/ros2_ws/install/imu_complementary_filter:/home/pi/ros2_ws/install/carla_msgs:/home/pi/ros2_ws/install/obstacle_stop:/opt/ros/humble')]), 'shell': False}
+[14.596209] (-) TimerEvent: {}
+[14.697086] (-) TimerEvent: {}
+[14.770304] (interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[14.797294] (-) TimerEvent: {}
+[14.819628] (interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[14.860090] (interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_interfaces\n'}
+[14.897700] (-) TimerEvent: {}
+[15.000781] (-) TimerEvent: {}
+[15.103642] (-) TimerEvent: {}
+[15.205673] (-) TimerEvent: {}
+[15.307069] (-) TimerEvent: {}
+[15.408402] (-) TimerEvent: {}
+[15.510009] (-) TimerEvent: {}
+[15.611504] (-) TimerEvent: {}
+[15.713003] (-) TimerEvent: {}
+[15.815253] (-) TimerEvent: {}
+[15.916530] (-) TimerEvent: {}
+[16.018281] (-) TimerEvent: {}
+[16.120055] (-) TimerEvent: {}
+[16.221694] (-) TimerEvent: {}
+[16.274734] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[16.277405] (interfaces) StdoutLine: {'line': b'creating interfaces.egg-info\n'}
+[16.279002] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[16.279967] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[16.280989] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[16.282118] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[16.294430] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[16.296882] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[16.322098] (-) TimerEvent: {}
+[16.423620] (-) TimerEvent: {}
+[16.447669] (interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[16.523794] (-) TimerEvent: {}
+[16.624513] (-) TimerEvent: {}
+[16.725169] (-) TimerEvent: {}
+[16.825903] (-) TimerEvent: {}
+[16.926609] (-) TimerEvent: {}
+[17.027312] (-) TimerEvent: {}
+[17.127978] (-) TimerEvent: {}
+[17.228699] (-) TimerEvent: {}
+[17.329394] (-) TimerEvent: {}
+[17.430221] (-) TimerEvent: {}
+[17.531137] (-) TimerEvent: {}
+[17.631819] (-) TimerEvent: {}
+[17.732539] (-) TimerEvent: {}
+[17.833261] (-) TimerEvent: {}
+[17.933926] (-) TimerEvent: {}
+[18.034665] (-) TimerEvent: {}
+[18.135430] (-) TimerEvent: {}
+[18.236390] (-) TimerEvent: {}
+[18.337069] (-) TimerEvent: {}
+[18.437848] (-) TimerEvent: {}
+[18.538876] (-) TimerEvent: {}
+[18.639587] (-) TimerEvent: {}
+[18.740344] (-) TimerEvent: {}
+[18.841056] (-) TimerEvent: {}
+[18.941795] (-) TimerEvent: {}
+[19.042575] (-) TimerEvent: {}
+[19.143286] (-) TimerEvent: {}
+[19.243998] (-) TimerEvent: {}
+[19.344632] (-) TimerEvent: {}
+[19.445435] (-) TimerEvent: {}
+[19.546611] (-) TimerEvent: {}
+[19.647733] (-) TimerEvent: {}
+[19.749150] (-) TimerEvent: {}
+[19.850092] (-) TimerEvent: {}
+[19.951008] (-) TimerEvent: {}
+[20.052545] (-) TimerEvent: {}
+[20.155016] (-) TimerEvent: {}
+[20.256904] (-) TimerEvent: {}
+[20.279906] (interfaces) StdoutLine: {'line': b'[  2%] Built target interfaces__cpp\n'}
+[20.345706] (interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[20.357288] (-) TimerEvent: {}
+[20.458327] (-) TimerEvent: {}
+[20.518593] (interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[20.527037] (interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[20.558530] (-) TimerEvent: {}
+[20.593791] (interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/joystick_order__functions.c.o\x1b[0m\n'}
+[20.658751] (-) TimerEvent: {}
+[20.760621] (-) TimerEvent: {}
+[20.862629] (-) TimerEvent: {}
+[20.964102] (-) TimerEvent: {}
+[21.039478] (interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/motors_order__functions.c.o\x1b[0m\n'}
+[21.064407] (-) TimerEvent: {}
+[21.166176] (-) TimerEvent: {}
+[21.269399] (-) TimerEvent: {}
+[21.311201] (interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/motors_feedback__functions.c.o\x1b[0m\n'}
+[21.369667] (-) TimerEvent: {}
+[21.470462] (-) TimerEvent: {}
+[21.563227] (interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/general_data__functions.c.o\x1b[0m\n'}
+[21.570643] (-) TimerEvent: {}
+[21.671463] (-) TimerEvent: {}
+[21.772404] (-) TimerEvent: {}
+[21.817761] (interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/steering_calibration__functions.c.o\x1b[0m\n'}
+[21.872634] (-) TimerEvent: {}
+[21.973498] (-) TimerEvent: {}
+[22.069572] (interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/ultrasonic__functions.c.o\x1b[0m\n'}
+[22.073703] (-) TimerEvent: {}
+[22.174549] (-) TimerEvent: {}
+[22.275308] (-) TimerEvent: {}
+[22.326655] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/gnss__functions.c.o\x1b[0m\n'}
+[22.375519] (-) TimerEvent: {}
+[22.476260] (-) TimerEvent: {}
+[22.577134] (-) TimerEvent: {}
+[22.582284] (interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/system_check__functions.c.o\x1b[0m\n'}
+[22.677404] (-) TimerEvent: {}
+[22.778250] (-) TimerEvent: {}
+[22.879247] (-) TimerEvent: {}
+[22.891268] (interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/autonomous__functions.c.o\x1b[0m\n'}
+[22.979393] (-) TimerEvent: {}
+[23.080237] (-) TimerEvent: {}
+[23.142013] (interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_generator_c.so\x1b[0m\n'}
+[23.180644] (-) TimerEvent: {}
+[23.283351] (-) TimerEvent: {}
+[23.385780] (-) TimerEvent: {}
+[23.389449] (interfaces) StdoutLine: {'line': b'[ 15%] Built target interfaces__rosidl_generator_c\n'}
+[23.442698] (interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[23.486012] (-) TimerEvent: {}
+[23.587597] (-) TimerEvent: {}
+[23.689176] (-) TimerEvent: {}
+[23.790763] (-) TimerEvent: {}
+[23.891571] (-) TimerEvent: {}
+[23.992343] (-) TimerEvent: {}
+[24.093178] (-) TimerEvent: {}
+[24.194004] (-) TimerEvent: {}
+[24.294856] (-) TimerEvent: {}
+[24.395698] (-) TimerEvent: {}
+[24.496704] (-) TimerEvent: {}
+[24.597624] (-) TimerEvent: {}
+[24.699138] (-) TimerEvent: {}
+[24.799893] (-) TimerEvent: {}
+[24.900772] (-) TimerEvent: {}
+[25.001628] (-) TimerEvent: {}
+[25.049568] (interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/joystick_order__type_support.cpp.o\x1b[0m\n'}
+[25.102010] (-) TimerEvent: {}
+[25.203476] (-) TimerEvent: {}
+[25.304381] (-) TimerEvent: {}
+[25.405571] (-) TimerEvent: {}
+[25.507465] (-) TimerEvent: {}
+[25.608495] (-) TimerEvent: {}
+[25.710202] (-) TimerEvent: {}
+[25.811118] (-) TimerEvent: {}
+[25.912163] (-) TimerEvent: {}
+[25.954577] (interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/joystick_order__type_support.cpp.o\x1b[0m\n'}
+[26.012504] (-) TimerEvent: {}
+[26.113550] (-) TimerEvent: {}
+[26.214514] (-) TimerEvent: {}
+[26.257357] (interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/joystick_order__type_support.cpp.o\x1b[0m\n'}
+[26.314695] (-) TimerEvent: {}
+[26.415838] (-) TimerEvent: {}
+[26.517650] (-) TimerEvent: {}
+[26.619484] (-) TimerEvent: {}
+[26.721151] (-) TimerEvent: {}
+[26.823244] (-) TimerEvent: {}
+[26.924965] (-) TimerEvent: {}
+[26.990220] (interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/motors_order__type_support.cpp.o\x1b[0m\n'}
+[27.025247] (-) TimerEvent: {}
+[27.126388] (-) TimerEvent: {}
+[27.227257] (-) TimerEvent: {}
+[27.328255] (-) TimerEvent: {}
+[27.429527] (-) TimerEvent: {}
+[27.530563] (-) TimerEvent: {}
+[27.631611] (-) TimerEvent: {}
+[27.732683] (-) TimerEvent: {}
+[27.833971] (-) TimerEvent: {}
+[27.935295] (-) TimerEvent: {}
+[28.036309] (-) TimerEvent: {}
+[28.137225] (-) TimerEvent: {}
+[28.238079] (-) TimerEvent: {}
+[28.293355] (interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/motors_order__type_support.cpp.o\x1b[0m\n'}
+[28.338403] (-) TimerEvent: {}
+[28.440165] (-) TimerEvent: {}
+[28.541732] (-) TimerEvent: {}
+[28.622941] (interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/motors_feedback__type_support.cpp.o\x1b[0m\n'}
+[28.641960] (-) TimerEvent: {}
+[28.743779] (-) TimerEvent: {}
+[28.804249] (interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/motors_order__type_support.cpp.o\x1b[0m\n'}
+[28.844113] (-) TimerEvent: {}
+[28.946032] (-) TimerEvent: {}
+[29.047219] (-) TimerEvent: {}
+[29.148312] (-) TimerEvent: {}
+[29.249439] (-) TimerEvent: {}
+[29.350713] (-) TimerEvent: {}
+[29.451937] (-) TimerEvent: {}
+[29.553381] (-) TimerEvent: {}
+[29.654702] (-) TimerEvent: {}
+[29.669155] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/joystick_order__type_support_c.cpp.o\x1b[0m\n'}
+[29.754983] (-) TimerEvent: {}
+[29.856171] (-) TimerEvent: {}
+[29.957293] (-) TimerEvent: {}
+[30.058326] (-) TimerEvent: {}
+[30.159460] (-) TimerEvent: {}
+[30.260849] (-) TimerEvent: {}
+[30.293985] (interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/general_data__type_support.cpp.o\x1b[0m\n'}
+[30.361089] (-) TimerEvent: {}
+[30.462355] (-) TimerEvent: {}
+[30.563508] (-) TimerEvent: {}
+[30.647017] (interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/motors_feedback__type_support.cpp.o\x1b[0m\n'}
+[30.663745] (-) TimerEvent: {}
+[30.765407] (-) TimerEvent: {}
+[30.867194] (-) TimerEvent: {}
+[30.968926] (-) TimerEvent: {}
+[31.070160] (-) TimerEvent: {}
+[31.171190] (-) TimerEvent: {}
+[31.216560] (interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/motors_feedback__type_support.cpp.o\x1b[0m\n'}
+[31.271651] (-) TimerEvent: {}
+[31.373256] (-) TimerEvent: {}
+[31.474523] (-) TimerEvent: {}
+[31.575567] (-) TimerEvent: {}
+[31.676906] (-) TimerEvent: {}
+[31.760520] (interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/motors_order__type_support_c.cpp.o\x1b[0m\n'}
+[31.777182] (-) TimerEvent: {}
+[31.878224] (-) TimerEvent: {}
+[31.948395] (interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/steering_calibration__type_support.cpp.o\x1b[0m\n'}
+[31.978743] (-) TimerEvent: {}
+[32.079661] (-) TimerEvent: {}
+[32.180825] (-) TimerEvent: {}
+[32.282084] (-) TimerEvent: {}
+[32.383742] (-) TimerEvent: {}
+[32.484781] (-) TimerEvent: {}
+[32.585859] (-) TimerEvent: {}
+[32.687007] (-) TimerEvent: {}
+[32.788077] (-) TimerEvent: {}
+[32.889590] (-) TimerEvent: {}
+[32.985736] (interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/general_data__type_support.cpp.o\x1b[0m\n'}
+[32.989780] (-) TimerEvent: {}
+[33.090823] (-) TimerEvent: {}
+[33.191813] (-) TimerEvent: {}
+[33.292922] (-) TimerEvent: {}
+[33.393971] (-) TimerEvent: {}
+[33.495031] (-) TimerEvent: {}
+[33.596122] (-) TimerEvent: {}
+[33.630243] (interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/ultrasonic__type_support.cpp.o\x1b[0m\n'}
+[33.649499] (interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/general_data__type_support.cpp.o\x1b[0m\n'}
+[33.696391] (-) TimerEvent: {}
+[33.797385] (-) TimerEvent: {}
+[33.815286] (interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/motors_feedback__type_support_c.cpp.o\x1b[0m\n'}
+[33.897752] (-) TimerEvent: {}
+[33.998882] (-) TimerEvent: {}
+[34.099806] (-) TimerEvent: {}
+[34.200718] (-) TimerEvent: {}
+[34.301897] (-) TimerEvent: {}
+[34.402996] (-) TimerEvent: {}
+[34.504197] (-) TimerEvent: {}
+[34.605330] (-) TimerEvent: {}
+[34.707370] (-) TimerEvent: {}
+[34.809729] (-) TimerEvent: {}
+[34.911022] (-) TimerEvent: {}
+[35.012007] (-) TimerEvent: {}
+[35.113124] (-) TimerEvent: {}
+[35.214395] (-) TimerEvent: {}
+[35.244689] (interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/gnss__type_support.cpp.o\x1b[0m\n'}
+[35.314592] (-) TimerEvent: {}
+[35.333275] (interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/steering_calibration__type_support.cpp.o\x1b[0m\n'}
+[35.414846] (-) TimerEvent: {}
+[35.515769] (-) TimerEvent: {}
+[35.616735] (-) TimerEvent: {}
+[35.717871] (-) TimerEvent: {}
+[35.819034] (-) TimerEvent: {}
+[35.892195] (interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/general_data__type_support_c.cpp.o\x1b[0m\n'}
+[35.919322] (-) TimerEvent: {}
+[36.021077] (-) TimerEvent: {}
+[36.097867] (interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/steering_calibration__type_support.cpp.o\x1b[0m\n'}
+[36.121406] (-) TimerEvent: {}
+[36.222634] (-) TimerEvent: {}
+[36.324011] (-) TimerEvent: {}
+[36.425027] (-) TimerEvent: {}
+[36.526051] (-) TimerEvent: {}
+[36.627006] (-) TimerEvent: {}
+[36.728230] (-) TimerEvent: {}
+[36.829557] (-) TimerEvent: {}
+[36.868778] (interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/system_check__type_support.cpp.o\x1b[0m\n'}
+[36.929913] (-) TimerEvent: {}
+[37.031046] (-) TimerEvent: {}
+[37.132035] (-) TimerEvent: {}
+[37.233013] (-) TimerEvent: {}
+[37.334114] (-) TimerEvent: {}
+[37.435100] (-) TimerEvent: {}
+[37.536132] (-) TimerEvent: {}
+[37.624591] (interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/ultrasonic__type_support.cpp.o\x1b[0m\n'}
+[37.636392] (-) TimerEvent: {}
+[37.737493] (-) TimerEvent: {}
+[37.838627] (-) TimerEvent: {}
+[37.940220] (-) TimerEvent: {}
+[37.999940] (interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/steering_calibration__type_support_c.cpp.o\x1b[0m\n'}
+[38.040492] (-) TimerEvent: {}
+[38.141621] (-) TimerEvent: {}
+[38.242863] (-) TimerEvent: {}
+[38.344047] (-) TimerEvent: {}
+[38.445223] (-) TimerEvent: {}
+[38.546303] (-) TimerEvent: {}
+[38.583321] (interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/ultrasonic__type_support.cpp.o\x1b[0m\n'}
+[38.609734] (interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/autonomous__type_support.cpp.o\x1b[0m\n'}
+[38.646519] (-) TimerEvent: {}
+[38.747531] (-) TimerEvent: {}
+[38.848444] (-) TimerEvent: {}
+[38.949447] (-) TimerEvent: {}
+[39.050441] (-) TimerEvent: {}
+[39.151635] (-) TimerEvent: {}
+[39.252843] (-) TimerEvent: {}
+[39.353791] (-) TimerEvent: {}
+[39.454965] (-) TimerEvent: {}
+[39.556123] (-) TimerEvent: {}
+[39.657329] (-) TimerEvent: {}
+[39.758597] (-) TimerEvent: {}
+[39.859935] (-) TimerEvent: {}
+[39.941894] (interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/gnss__type_support.cpp.o\x1b[0m\n'}
+[39.960237] (-) TimerEvent: {}
+[40.061486] (-) TimerEvent: {}
+[40.108100] (interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/ultrasonic__type_support_c.cpp.o\x1b[0m\n'}
+[40.161798] (-) TimerEvent: {}
+[40.264349] (-) TimerEvent: {}
+[40.280209] (interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[40.364567] (-) TimerEvent: {}
+[40.466444] (-) TimerEvent: {}
+[40.510424] (interfaces) StdoutLine: {'line': b'[ 47%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[40.566743] (-) TimerEvent: {}
+[40.578668] (interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[40.666945] (-) TimerEvent: {}
+[40.768895] (-) TimerEvent: {}
+[40.870814] (-) TimerEvent: {}
+[40.972971] (-) TimerEvent: {}
+[41.074632] (-) TimerEvent: {}
+[41.124386] (interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/gnss__type_support.cpp.o\x1b[0m\n'}
+[41.174935] (-) TimerEvent: {}
+[41.276702] (-) TimerEvent: {}
+[41.378336] (-) TimerEvent: {}
+[41.479919] (-) TimerEvent: {}
+[41.581626] (-) TimerEvent: {}
+[41.683302] (-) TimerEvent: {}
+[41.785098] (-) TimerEvent: {}
+[41.887205] (-) TimerEvent: {}
+[41.988962] (-) TimerEvent: {}
+[42.090922] (-) TimerEvent: {}
+[42.193060] (-) TimerEvent: {}
+[42.257549] (interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/gnss__type_support_c.cpp.o\x1b[0m\n'}
+[42.293308] (-) TimerEvent: {}
+[42.339353] (interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/system_check__type_support.cpp.o\x1b[0m\n'}
+[42.393532] (-) TimerEvent: {}
+[42.494977] (-) TimerEvent: {}
+[42.596590] (-) TimerEvent: {}
+[42.698164] (-) TimerEvent: {}
+[42.799989] (-) TimerEvent: {}
+[42.901807] (-) TimerEvent: {}
+[43.003547] (-) TimerEvent: {}
+[43.105632] (-) TimerEvent: {}
+[43.208009] (-) TimerEvent: {}
+[43.309877] (-) TimerEvent: {}
+[43.411999] (-) TimerEvent: {}
+[43.513560] (-) TimerEvent: {}
+[43.561188] (interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/system_check__type_support.cpp.o\x1b[0m\n'}
+[43.613879] (-) TimerEvent: {}
+[43.716259] (-) TimerEvent: {}
+[43.817931] (-) TimerEvent: {}
+[43.919975] (-) TimerEvent: {}
+[44.021397] (-) TimerEvent: {}
+[44.123379] (-) TimerEvent: {}
+[44.225115] (-) TimerEvent: {}
+[44.272668] (interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/system_check__type_support_c.cpp.o\x1b[0m\n'}
+[44.325367] (-) TimerEvent: {}
+[44.427341] (-) TimerEvent: {}
+[44.529015] (-) TimerEvent: {}
+[44.630494] (-) TimerEvent: {}
+[44.732079] (-) TimerEvent: {}
+[44.833035] (-) TimerEvent: {}
+[44.844182] (interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/autonomous__type_support.cpp.o\x1b[0m\n'}
+[44.933308] (-) TimerEvent: {}
+[45.034671] (-) TimerEvent: {}
+[45.136459] (-) TimerEvent: {}
+[45.238485] (-) TimerEvent: {}
+[45.340442] (-) TimerEvent: {}
+[45.442820] (-) TimerEvent: {}
+[45.546078] (-) TimerEvent: {}
+[45.647874] (-) TimerEvent: {}
+[45.749711] (-) TimerEvent: {}
+[45.851367] (-) TimerEvent: {}
+[45.953616] (-) TimerEvent: {}
+[46.056153] (-) TimerEvent: {}
+[46.159659] (-) TimerEvent: {}
+[46.163491] (interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/autonomous__type_support.cpp.o\x1b[0m\n'}
+[46.259919] (-) TimerEvent: {}
+[46.361573] (-) TimerEvent: {}
+[46.462688] (-) TimerEvent: {}
+[46.529524] (interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/autonomous__type_support_c.cpp.o\x1b[0m\n'}
+[46.562943] (-) TimerEvent: {}
+[46.663982] (-) TimerEvent: {}
+[46.765037] (-) TimerEvent: {}
+[46.866061] (-) TimerEvent: {}
+[46.955117] (interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/joystick_order__type_support.c.o\x1b[0m\n'}
+[46.966317] (-) TimerEvent: {}
+[47.067349] (-) TimerEvent: {}
+[47.169345] (-) TimerEvent: {}
+[47.177275] (interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/motors_order__type_support.c.o\x1b[0m\n'}
+[47.269596] (-) TimerEvent: {}
+[47.333642] (interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[47.369917] (-) TimerEvent: {}
+[47.393442] (interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/motors_feedback__type_support.c.o\x1b[0m\n'}
+[47.470222] (-) TimerEvent: {}
+[47.572507] (-) TimerEvent: {}
+[47.624295] (interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/general_data__type_support.c.o\x1b[0m\n'}
+[47.672804] (-) TimerEvent: {}
+[47.762484] (interfaces) StdoutLine: {'line': b'[ 62%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[47.773126] (-) TimerEvent: {}
+[47.825967] (interfaces) StdoutLine: {'line': b'[ 63%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[47.852984] (interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/steering_calibration__type_support.c.o\x1b[0m\n'}
+[47.873377] (-) TimerEvent: {}
+[47.974545] (-) TimerEvent: {}
+[48.076548] (-) TimerEvent: {}
+[48.093889] (interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/ultrasonic__type_support.c.o\x1b[0m\n'}
+[48.176802] (-) TimerEvent: {}
+[48.278787] (-) TimerEvent: {}
+[48.328911] (interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/gnss__type_support.c.o\x1b[0m\n'}
+[48.378998] (-) TimerEvent: {}
+[48.479937] (-) TimerEvent: {}
+[48.543362] (interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/system_check__type_support.c.o\x1b[0m\n'}
+[48.580263] (-) TimerEvent: {}
+[48.640584] (interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[48.666111] (interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[48.680466] (-) TimerEvent: {}
+[48.770487] (interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/autonomous__type_support.c.o\x1b[0m\n'}
+[48.780729] (-) TimerEvent: {}
+[48.882413] (-) TimerEvent: {}
+[48.984324] (-) TimerEvent: {}
+[49.002260] (interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[49.076818] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[49.084522] (-) TimerEvent: {}
+[49.104369] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[49.166865] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[49.184685] (-) TimerEvent: {}
+[49.285336] (-) TimerEvent: {}
+[49.385954] (-) TimerEvent: {}
+[49.486632] (-) TimerEvent: {}
+[49.587233] (-) TimerEvent: {}
+[49.687823] (-) TimerEvent: {}
+[49.788488] (-) TimerEvent: {}
+[49.889440] (-) TimerEvent: {}
+[49.990049] (-) TimerEvent: {}
+[50.090696] (-) TimerEvent: {}
+[50.191456] (-) TimerEvent: {}
+[50.292439] (-) TimerEvent: {}
+[50.393092] (-) TimerEvent: {}
+[50.493759] (-) TimerEvent: {}
+[50.594452] (-) TimerEvent: {}
+[50.695122] (-) TimerEvent: {}
+[50.795803] (-) TimerEvent: {}
+[50.896492] (-) TimerEvent: {}
+[50.997152] (-) TimerEvent: {}
+[51.097783] (-) TimerEvent: {}
+[51.198444] (-) TimerEvent: {}
+[51.299058] (-) TimerEvent: {}
+[51.399691] (-) TimerEvent: {}
+[51.500299] (-) TimerEvent: {}
+[51.601012] (-) TimerEvent: {}
+[51.702039] (-) TimerEvent: {}
+[51.803147] (-) TimerEvent: {}
+[51.811250] (interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/joystick_order__type_support.cpp.o\x1b[0m\n'}
+[51.812506] (interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/motors_order__type_support.cpp.o\x1b[0m\n'}
+[51.816196] (interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/motors_feedback__type_support.cpp.o\x1b[0m\n'}
+[51.819375] (interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/general_data__type_support.cpp.o\x1b[0m\n'}
+[51.903434] (-) TimerEvent: {}
+[51.979870] (interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/steering_calibration__type_support.cpp.o\x1b[0m\n'}
+[51.980955] (interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/ultrasonic__type_support.cpp.o\x1b[0m\n'}
+[51.984804] (interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/gnss__type_support.cpp.o\x1b[0m\n'}
+[51.989272] (interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/system_check__type_support.cpp.o\x1b[0m\n'}
+[52.003680] (-) TimerEvent: {}
+[52.105194] (-) TimerEvent: {}
+[52.140261] (interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/autonomous__type_support.cpp.o\x1b[0m\n'}
+[52.205380] (-) TimerEvent: {}
+[52.288886] (interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[52.305581] (-) TimerEvent: {}
+[52.406384] (-) TimerEvent: {}
+[52.477004] (interfaces) StdoutLine: {'line': b'[ 82%] Built target interfaces__rosidl_typesupport_c\n'}
+[52.506550] (-) TimerEvent: {}
+[52.569857] (interfaces) StdoutLine: {'line': b'[ 82%] Built target interfaces\n'}
+[52.606748] (-) TimerEvent: {}
+[52.665650] (interfaces) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[52.706903] (-) TimerEvent: {}
+[52.807516] (-) TimerEvent: {}
+[52.908157] (-) TimerEvent: {}
+[53.008841] (-) TimerEvent: {}
+[53.109622] (-) TimerEvent: {}
+[53.210352] (-) TimerEvent: {}
+[53.310955] (-) TimerEvent: {}
+[53.411579] (-) TimerEvent: {}
+[53.512203] (-) TimerEvent: {}
+[53.612863] (-) TimerEvent: {}
+[53.713534] (-) TimerEvent: {}
+[53.814248] (-) TimerEvent: {}
+[53.914935] (-) TimerEvent: {}
+[54.015728] (-) TimerEvent: {}
+[54.116533] (-) TimerEvent: {}
+[54.217179] (-) TimerEvent: {}
+[54.317782] (-) TimerEvent: {}
+[54.418541] (-) TimerEvent: {}
+[54.519371] (-) TimerEvent: {}
+[54.620039] (-) TimerEvent: {}
+[54.720714] (-) TimerEvent: {}
+[54.821493] (-) TimerEvent: {}
+[54.922437] (-) TimerEvent: {}
+[55.023072] (-) TimerEvent: {}
+[55.123714] (-) TimerEvent: {}
+[55.224327] (-) TimerEvent: {}
+[55.324945] (-) TimerEvent: {}
+[55.425571] (-) TimerEvent: {}
+[55.526243] (-) TimerEvent: {}
+[55.626898] (-) TimerEvent: {}
+[55.727520] (-) TimerEvent: {}
+[55.828186] (-) TimerEvent: {}
+[55.928973] (-) TimerEvent: {}
+[56.029596] (-) TimerEvent: {}
+[56.130239] (-) TimerEvent: {}
+[56.230843] (-) TimerEvent: {}
+[56.331487] (-) TimerEvent: {}
+[56.432141] (-) TimerEvent: {}
+[56.532812] (-) TimerEvent: {}
+[56.633464] (-) TimerEvent: {}
+[56.734109] (-) TimerEvent: {}
+[56.834772] (-) TimerEvent: {}
+[56.935381] (-) TimerEvent: {}
+[57.035970] (-) TimerEvent: {}
+[57.136609] (-) TimerEvent: {}
+[57.237237] (-) TimerEvent: {}
+[57.337880] (-) TimerEvent: {}
+[57.438578] (-) TimerEvent: {}
+[57.539219] (-) TimerEvent: {}
+[57.639857] (-) TimerEvent: {}
+[57.740504] (-) TimerEvent: {}
+[57.841258] (-) TimerEvent: {}
+[57.942065] (-) TimerEvent: {}
+[58.042715] (-) TimerEvent: {}
+[58.143345] (-) TimerEvent: {}
+[58.243984] (-) TimerEvent: {}
+[58.344596] (-) TimerEvent: {}
+[58.445228] (-) TimerEvent: {}
+[58.545912] (-) TimerEvent: {}
+[58.646604] (-) TimerEvent: {}
+[58.747251] (-) TimerEvent: {}
+[58.847893] (-) TimerEvent: {}
+[58.948521] (-) TimerEvent: {}
+[59.049174] (-) TimerEvent: {}
+[59.149843] (-) TimerEvent: {}
+[59.250528] (-) TimerEvent: {}
+[59.351205] (-) TimerEvent: {}
+[59.451835] (-) TimerEvent: {}
+[59.552532] (-) TimerEvent: {}
+[59.653420] (-) TimerEvent: {}
+[59.754088] (-) TimerEvent: {}
+[59.854739] (-) TimerEvent: {}
+[59.955646] (-) TimerEvent: {}
+[60.056318] (-) TimerEvent: {}
+[60.156937] (-) TimerEvent: {}
+[60.257567] (-) TimerEvent: {}
+[60.358226] (-) TimerEvent: {}
+[60.458852] (-) TimerEvent: {}
+[60.559478] (-) TimerEvent: {}
+[60.660122] (-) TimerEvent: {}
+[60.760784] (-) TimerEvent: {}
+[60.861409] (-) TimerEvent: {}
+[60.962052] (-) TimerEvent: {}
+[61.062702] (-) TimerEvent: {}
+[61.163353] (-) TimerEvent: {}
+[61.264204] (-) TimerEvent: {}
+[61.365532] (-) TimerEvent: {}
+[61.466397] (-) TimerEvent: {}
+[61.567512] (-) TimerEvent: {}
+[61.624531] (interfaces) StdoutLine: {'line': b'[ 83%] Built target interfaces__py\n'}
+[61.667737] (-) TimerEvent: {}
+[61.727110] (interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_joystick_order_s.c.o\x1b[0m\n'}
+[61.728429] (interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motors_order_s.c.o\x1b[0m\n'}
+[61.732278] (interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motors_feedback_s.c.o\x1b[0m\n'}
+[61.734507] (interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_general_data_s.c.o\x1b[0m\n'}
+[61.768118] (-) TimerEvent: {}
+[61.869462] (-) TimerEvent: {}
+[61.970392] (-) TimerEvent: {}
+[62.071314] (-) TimerEvent: {}
+[62.172145] (-) TimerEvent: {}
+[62.273313] (-) TimerEvent: {}
+[62.374703] (-) TimerEvent: {}
+[62.442034] (interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_steering_calibration_s.c.o\x1b[0m\n'}
+[62.449920] (interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_ultrasonic_s.c.o\x1b[0m\n'}
+[62.451330] (interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_gnss_s.c.o\x1b[0m\n'}
+[62.455222] (interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_system_check_s.c.o\x1b[0m\n'}
+[62.475040] (-) TimerEvent: {}
+[62.576342] (-) TimerEvent: {}
+[62.677286] (-) TimerEvent: {}
+[62.778067] (-) TimerEvent: {}
+[62.879104] (-) TimerEvent: {}
+[62.976999] (interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_autonomous_s.c.o\x1b[0m\n'}
+[62.979446] (-) TimerEvent: {}
+[63.080412] (-) TimerEvent: {}
+[63.181165] (-) TimerEvent: {}
+[63.281846] (-) TimerEvent: {}
+[63.382649] (-) TimerEvent: {}
+[63.410360] (interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so\x1b[0m\n'}
+[63.482873] (-) TimerEvent: {}
+[63.583627] (-) TimerEvent: {}
+[63.624625] (interfaces) StdoutLine: {'line': b'[ 93%] Built target interfaces__rosidl_generator_py\n'}
+[63.683876] (-) TimerEvent: {}
+[63.722750] (interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[63.724779] (interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[63.726195] (interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[63.784100] (-) TimerEvent: {}
+[63.884909] (-) TimerEvent: {}
+[63.986613] (-) TimerEvent: {}
+[64.088457] (-) TimerEvent: {}
+[64.189933] (-) TimerEvent: {}
+[64.292128] (interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[64.293266] (-) TimerEvent: {}
+[64.308695] (interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[64.350796] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[64.393630] (-) TimerEvent: {}
+[64.474744] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[64.493862] (-) TimerEvent: {}
+[64.496985] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[64.538433] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[64.587946] (interfaces) CommandEnded: {'returncode': 0}
+[64.594819] (-) TimerEvent: {}
+[64.695539] (-) TimerEvent: {}
+[64.796301] (-) TimerEvent: {}
+[64.897094] (-) TimerEvent: {}
+[64.998047] (-) TimerEvent: {}
+[65.098995] (-) TimerEvent: {}
+[65.200156] (-) TimerEvent: {}
+[65.300939] (-) TimerEvent: {}
+[65.401823] (-) TimerEvent: {}
+[65.503055] (-) TimerEvent: {}
+[65.603801] (-) TimerEvent: {}
+[65.704565] (-) TimerEvent: {}
+[65.805354] (-) TimerEvent: {}
+[65.906027] (-) TimerEvent: {}
+[66.006802] (-) TimerEvent: {}
+[66.107552] (-) TimerEvent: {}
+[66.208706] (-) TimerEvent: {}
+[66.262043] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[66.300655] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/Pi4_ros2_ws_Simon/build/interfaces'], 'cwd': '/home/pi/Pi4_ros2_ws_Simon/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.103 40398 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/ros2_ws/install/rviz_imu_plugin/lib:/home/pi/ros2_ws/install/interfaces/lib:/home/pi/ros2_ws/install/imu_filter_madgwick/lib:/home/pi/ros2_ws/install/carla_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/pi/ros2_ws/install/geicar_start:/home/pi/ros2_ws/install/system_check:/home/pi/ros2_ws/install/simulation:/home/pi/ros2_ws/install/safety_stop:/home/pi/ros2_ws/install/imu_tools:/home/pi/ros2_ws/install/rviz_imu_plugin:/home/pi/ros2_ws/install/obstacle_stop:/home/pi/ros2_ws/install/joystick:/home/pi/ros2_ws/install/car_control:/home/pi/ros2_ws/install/can:/home/pi/ros2_ws/install/interfaces:/home/pi/ros2_ws/install/imu_filter_madgwick:/home/pi/ros2_ws/install/imu_complementary_filter:/home/pi/ros2_ws/install/carla_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/Pi4_ros2_ws_Simon/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.103 40398 10.105.1.168 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/ros2_ws/install/obstacle_stop/lib/python3.10/site-packages:/home/pi/ros2_ws/install/joystick/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/home/pi/ros2_ws/install/carla_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/ros2_ws/install/geicar_start:/home/pi/ros2_ws/install/system_check:/home/pi/ros2_ws/install/simulation:/home/pi/ros2_ws/install/safety_stop:/home/pi/ros2_ws/install/imu_tools:/home/pi/ros2_ws/install/rviz_imu_plugin:/home/pi/ros2_ws/install/joystick:/home/pi/ros2_ws/install/car_control:/home/pi/ros2_ws/install/can:/home/pi/ros2_ws/install/interfaces:/home/pi/ros2_ws/install/imu_filter_madgwick:/home/pi/ros2_ws/install/imu_complementary_filter:/home/pi/ros2_ws/install/carla_msgs:/home/pi/ros2_ws/install/obstacle_stop:/opt/ros/humble')]), 'shell': False}
+[66.308827] (-) TimerEvent: {}
+[66.340502] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[66.341512] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[66.343117] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces\n'}
+[66.343870] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg\n'}
+[66.344529] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/system_check.h\n'}
+[66.345555] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[66.346591] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/motors_order.h\n'}
+[66.347505] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/ultrasonic.h\n'}
+[66.348401] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/joystick_order.h\n'}
+[66.349314] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/steering_calibration.h\n'}
+[66.350279] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/gnss.h\n'}
+[66.351150] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/autonomous.h\n'}
+[66.351995] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[66.352963] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__struct.h\n'}
+[66.353986] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__functions.h\n'}
+[66.355102] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__type_support.h\n'}
+[66.356110] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__functions.c\n'}
+[66.357167] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__functions.h\n'}
+[66.358232] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__type_support.h\n'}
+[66.359240] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__functions.c\n'}
+[66.360326] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__type_support.h\n'}
+[66.361296] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__functions.c\n'}
+[66.362351] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__type_support.h\n'}
+[66.363332] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__struct.h\n'}
+[66.364270] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__functions.c\n'}
+[66.365498] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__functions.c\n'}
+[66.366585] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__functions.c\n'}
+[66.367627] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__struct.h\n'}
+[66.368596] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__struct.h\n'}
+[66.369561] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__functions.h\n'}
+[66.370641] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__functions.h\n'}
+[66.371645] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__type_support.h\n'}
+[66.372630] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__struct.h\n'}
+[66.373591] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__functions.h\n'}
+[66.374778] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__functions.c\n'}
+[66.375864] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__functions.c\n'}
+[66.376930] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__functions.h\n'}
+[66.377976] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__type_support.h\n'}
+[66.379025] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__functions.c\n'}
+[66.380052] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__functions.h\n'}
+[66.381140] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__functions.h\n'}
+[66.382242] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__struct.h\n'}
+[66.383216] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__type_support.h\n'}
+[66.384248] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__type_support.h\n'}
+[66.385223] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__functions.h\n'}
+[66.386260] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__struct.h\n'}
+[66.387275] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__struct.h\n'}
+[66.388230] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__type_support.h\n'}
+[66.389212] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__struct.h\n'}
+[66.390223] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/general_data.h\n'}
+[66.391381] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/motors_feedback.h\n'}
+[66.392896] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[66.393997] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[66.395413] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[66.398105] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""\n'}
+[66.398674] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces\n'}
+[66.399124] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg\n'}
+[66.399529] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[66.400208] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[66.400845] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__rosidl_typesupport_fastrtps_c.h\n'}
+[66.402050] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__rosidl_typesupport_fastrtps_c.h\n'}
+[66.403335] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__rosidl_typesupport_fastrtps_c.h\n'}
+[66.404344] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__rosidl_typesupport_fastrtps_c.h\n'}
+[66.405471] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__rosidl_typesupport_fastrtps_c.h\n'}
+[66.406619] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__rosidl_typesupport_fastrtps_c.h\n'}
+[66.407711] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__rosidl_typesupport_fastrtps_c.h\n'}
+[66.408820] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__rosidl_typesupport_fastrtps_c.h\n'}
+[66.409161] (-) TimerEvent: {}
+[66.409942] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__rosidl_typesupport_fastrtps_c.h\n'}
+[66.411617] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[66.414357] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[66.414886] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces\n'}
+[66.415278] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg\n'}
+[66.415697] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/motors_order.hpp\n'}
+[66.416501] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/gnss.hpp\n'}
+[66.417458] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/motors_feedback.hpp\n'}
+[66.418422] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/ultrasonic.hpp\n'}
+[66.419352] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/steering_calibration.hpp\n'}
+[66.420239] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[66.420887] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__builder.hpp\n'}
+[66.421986] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__traits.hpp\n'}
+[66.423150] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__struct.hpp\n'}
+[66.424260] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__traits.hpp\n'}
+[66.425206] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__struct.hpp\n'}
+[66.426348] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__builder.hpp\n'}
+[66.427367] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__struct.hpp\n'}
+[66.428408] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__builder.hpp\n'}
+[66.429419] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__traits.hpp\n'}
+[66.430519] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__struct.hpp\n'}
+[66.431570] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__traits.hpp\n'}
+[66.432571] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__struct.hpp\n'}
+[66.433584] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__builder.hpp\n'}
+[66.434654] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__builder.hpp\n'}
+[66.435642] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__builder.hpp\n'}
+[66.436651] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__traits.hpp\n'}
+[66.437706] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__builder.hpp\n'}
+[66.438908] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__struct.hpp\n'}
+[66.439939] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__traits.hpp\n'}
+[66.440912] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__struct.hpp\n'}
+[66.441877] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__struct.hpp\n'}
+[66.442915] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__traits.hpp\n'}
+[66.443929] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__traits.hpp\n'}
+[66.445019] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__builder.hpp\n'}
+[66.446089] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__builder.hpp\n'}
+[66.447166] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__struct.hpp\n'}
+[66.448203] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__traits.hpp\n'}
+[66.449161] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/joystick_order.hpp\n'}
+[66.450091] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/system_check.hpp\n'}
+[66.451171] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/general_data.hpp\n'}
+[66.452076] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/autonomous.hpp\n'}
+[66.453119] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces\n'}
+[66.453568] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg\n'}
+[66.453979] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[66.455045] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[66.455526] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps\n'}
+[66.456330] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.457504] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.458747] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.459863] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.461004] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.462186] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.463322] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.464435] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.465610] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.467041] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[66.469889] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[66.470453] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces\n'}
+[66.470866] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg\n'}
+[66.471248] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[66.472038] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[66.472645] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__rosidl_typesupport_introspection_c.h\n'}
+[66.473793] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__rosidl_typesupport_introspection_c.h\n'}
+[66.475073] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__type_support.c\n'}
+[66.476147] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__type_support.c\n'}
+[66.477202] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__type_support.c\n'}
+[66.478362] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__rosidl_typesupport_introspection_c.h\n'}
+[66.479459] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__type_support.c\n'}
+[66.480677] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__type_support.c\n'}
+[66.481758] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__type_support.c\n'}
+[66.482997] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__type_support.c\n'}
+[66.484109] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__rosidl_typesupport_introspection_c.h\n'}
+[66.485267] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__rosidl_typesupport_introspection_c.h\n'}
+[66.486402] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__rosidl_typesupport_introspection_c.h\n'}
+[66.487525] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__type_support.c\n'}
+[66.488663] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__type_support.c\n'}
+[66.489736] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__rosidl_typesupport_introspection_c.h\n'}
+[66.491058] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__rosidl_typesupport_introspection_c.h\n'}
+[66.492189] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__rosidl_typesupport_introspection_c.h\n'}
+[66.493823] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[66.496266] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[66.496797] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[66.499091] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""\n'}
+[66.499591] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces\n'}
+[66.500025] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg\n'}
+[66.500330] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[66.500696] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.501827] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__type_support.cpp\n'}
+[66.502997] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.504123] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/general_data__type_support.cpp\n'}
+[66.505288] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.506546] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__type_support.cpp\n'}
+[66.507674] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.508852] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.509191] (-) TimerEvent: {}
+[66.510063] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/joystick_order__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.511283] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/ultrasonic__type_support.cpp\n'}
+[66.512406] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__type_support.cpp\n'}
+[66.513465] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/autonomous__type_support.cpp\n'}
+[66.514565] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_order__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.515690] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/motors_feedback__type_support.cpp\n'}
+[66.516844] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/gnss__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.517943] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/system_check__type_support.cpp\n'}
+[66.519146] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__type_support.cpp\n'}
+[66.520291] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/include/interfaces/interfaces/msg/detail/steering_calibration__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.521737] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[66.524769] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[66.525294] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[66.527540] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[66.528040] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[66.529064] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[66.530098] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[66.531170] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[66.532294] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[66.533284] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[66.534416] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[66.535589] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[66.536307] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[66.537855] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.539330] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[66.540869] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[66.542277] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[66.543175] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[66.544662] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.545921] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg\n'}
+[66.546751] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_joystick_order.py\n'}
+[66.547878] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_system_check_s.c\n'}
+[66.549010] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_autonomous.py\n'}
+[66.550003] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_joystick_order_s.c\n'}
+[66.551305] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_steering_calibration.py\n'}
+[66.552319] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_ultrasonic.py\n'}
+[66.553343] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_motors_feedback_s.c\n'}
+[66.554383] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_autonomous_s.c\n'}
+[66.555338] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py\n'}
+[66.556278] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_general_data.py\n'}
+[66.557283] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_general_data_s.c\n'}
+[66.558416] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_gnss.py\n'}
+[66.559473] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_motors_order_s.c\n'}
+[66.560486] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_steering_calibration_s.c\n'}
+[66.561533] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_gnss_s.c\n'}
+[66.562548] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_system_check.py\n'}
+[66.563639] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_motors_order.py\n'}
+[66.564695] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_motors_feedback.py\n'}
+[66.565747] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_ultrasonic_s.c\n'}
+[66.566991] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.609365] (-) TimerEvent: {}
+[66.710049] (-) TimerEvent: {}
+[66.764065] (interfaces) StdoutLine: {'line': b"Listing '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[66.765567] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...\n"}
+[66.766766] (interfaces) StdoutLine: {'line': b"Listing '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg'...\n"}
+[66.767661] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py'...\n"}
+[66.768565] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_autonomous.py'...\n"}
+[66.769633] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_general_data.py'...\n"}
+[66.770535] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_gnss.py'...\n"}
+[66.771721] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_joystick_order.py'...\n"}
+[66.772684] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_motors_feedback.py'...\n"}
+[66.773669] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_motors_order.py'...\n"}
+[66.774553] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_steering_calibration.py'...\n"}
+[66.775550] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_system_check.py'...\n"}
+[66.776265] (interfaces) StdoutLine: {'line': b"Compiling '/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_ultrasonic.py'...\n"}
+[66.790486] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.793181] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[66.794631] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.797411] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[66.798945] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.802051] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[66.802717] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[66.805701] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Pi4_ros2_ws_Simon/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""\n'}
+[66.806423] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/JoystickOrder.idl\n'}
+[66.807821] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/MotorsOrder.idl\n'}
+[66.809056] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/MotorsFeedback.idl\n'}
+[66.810181] (-) TimerEvent: {}
+[66.810715] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/GeneralData.idl\n'}
+[66.811608] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/SteeringCalibration.idl\n'}
+[66.812667] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/Ultrasonic.idl\n'}
+[66.813732] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/Gnss.idl\n'}
+[66.814928] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/SystemCheck.idl\n'}
+[66.816021] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/Autonomous.idl\n'}
+[66.817099] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/JoystickOrder.msg\n'}
+[66.818191] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/MotorsOrder.msg\n'}
+[66.819273] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/MotorsFeedback.msg\n'}
+[66.820312] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/GeneralData.msg\n'}
+[66.821333] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/SteeringCalibration.msg\n'}
+[66.822390] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/Ultrasonic.msg\n'}
+[66.823501] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/Gnss.msg\n'}
+[66.824505] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/SystemCheck.msg\n'}
+[66.825568] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/msg/Autonomous.msg\n'}
+[66.827088] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[66.828694] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[66.829895] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[66.831077] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[66.832254] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/path.sh\n'}
+[66.833313] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[66.834427] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/local_setup.bash\n'}
+[66.835509] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/local_setup.sh\n'}
+[66.836603] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[66.837666] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[66.838725] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/package.dsv\n'}
+[66.840151] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[66.841621] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[66.843067] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[66.844399] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[66.845777] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[66.847232] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[66.848594] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[66.849974] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[66.851461] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[66.852789] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[66.854199] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[66.855644] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[66.856982] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[66.858382] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[66.859931] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[66.861209] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[66.862844] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[66.864144] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[66.865397] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[66.866549] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[66.867889] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[66.869100] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[66.870410] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[66.871668] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[66.872966] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[66.874183] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[66.875142] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[66.876297] (interfaces) StdoutLine: {'line': b'-- Installing: /home/pi/Pi4_ros2_ws_Simon/install/interfaces/share/interfaces/package.xml\n'}
+[66.883390] (interfaces) CommandEnded: {'returncode': 0}
+[66.910663] (-) TimerEvent: {}
+[67.012577] (-) TimerEvent: {}
+[67.113326] (-) TimerEvent: {}
+[67.214200] (-) TimerEvent: {}
+[67.314990] (-) TimerEvent: {}
+[67.416076] (-) TimerEvent: {}
+[67.516876] (-) TimerEvent: {}
+[67.618089] (-) TimerEvent: {}
+[67.719284] (-) TimerEvent: {}
+[67.820010] (-) TimerEvent: {}
+[67.920763] (-) TimerEvent: {}
+[68.021431] (-) TimerEvent: {}
+[68.122084] (-) TimerEvent: {}
+[68.222829] (-) TimerEvent: {}
+[68.323525] (-) TimerEvent: {}
+[68.424205] (-) TimerEvent: {}
+[68.524941] (-) TimerEvent: {}
+[68.625718] (-) TimerEvent: {}
+[68.693867] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[68.696475] (-) EventReactorShutdown: {}

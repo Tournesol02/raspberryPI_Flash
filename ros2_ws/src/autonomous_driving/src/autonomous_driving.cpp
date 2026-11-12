@@ -36,7 +36,7 @@ public:
 
         // Subscriber: autonomous start/stop command
         subscription_start_ =
-            this->create_subscription<interfaces::msg::AutonomousCommand>(
+            this->create_subscription<interfaces::msg::Autonomous>(
                 "autonomous_command", 10,
                 std::bind(&autonomous_drive::startCallback, this, _1));
 
@@ -57,16 +57,14 @@ private:
     // ==========================================
 
     void startCallback(
-        const interfaces::msg::AutonomousCommand::SharedPtr msg)
+        const interfaces::msg::Autonomous::SharedPtr msg)
     {
         if (msg->start && !sequenceStarted)
         {
             sequenceStarted = true;
             sequenceFinished = false;
-
             // Record sequence starting time
             time_start = this->now();
-
             RCLCPP_INFO(this->get_logger(), "Sequence STARTED");
         }
         else if (!msg->start)
@@ -98,15 +96,15 @@ private:
                 // 0-3 seconds: move forward
                 avance(0.5);
             }
-            else if (elapsed < 6.0)
+            else if (elapsed < 8.0)
             {
                 // 3-6 seconds: move backwards
                 reculer(0.5);
             }
-            else if (elapsed < 8.0)
+            else if (elapsed < 10.0)
             {
                 // 6-8 seconds: turn right while moving
-                droite(0.3);
+                droite(0.5);
             }
             else
             {
@@ -167,7 +165,17 @@ private:
             throttle, false,
             leftRearPwmCmd, rightRearPwmCmd);
 
-        steeringAngle = 50;
+        steeringAngle = 120;
+    }
+
+      void gauche(float throttle)
+    {
+        // Move forward while steering right
+        manualPropulsionCmd(
+            throttle, false,
+            leftRearPwmCmd, rightRearPwmCmd);
+
+        steeringAngle = -120;
     }
 
 
@@ -176,7 +184,6 @@ private:
         // Neutral motor PWM
         leftRearPwmCmd = 50;
         rightRearPwmCmd = 50;
-
         // Center steering
         steeringAngle = 0;
     }

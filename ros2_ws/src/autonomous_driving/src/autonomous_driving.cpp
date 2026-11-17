@@ -42,13 +42,13 @@ public:
 
     // Publisher: motor commands
     publisher_can_ =this->create_publisher<interfaces::msg::MotorsOrder>("motors_order", 10);
-    
+
     // Publish acknowledgement of having done a movement
     publisher_ack_ =this->create_publisher<interfaces::msg::AutonomousCommand>("movement_ack", 10);
 
     // Subscriber: autonomous start/stop command
     subscription_start_ =this->create_subscription<interfaces::msg::AutonomousCommand>("autonomous_command", 10,std::bind(&autonomous_drive::moveTypeCallback, this, _1));
-        
+
     // Suscriber : obstacle stop command
     subscription_stop_ =this->create_subscription<std_msgs::msg::Bool>("obstacle_stop", 10,std::bind(&autonomous_drive::obstacleStopCallback, this, _1));
 
@@ -56,7 +56,7 @@ public:
     //timer_ = this->create_wall_timer(50ms,std::bind(&autonomous_drive::updateCmd, this));
 
     // Timer updates SimonMoves each 50ms
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(50),std::bind(&YourNode::moveSimon, this));
+    timer_ = this->create_wall_timer(std::chrono::milliseconds(50),std::bind(&autonomous_drive::moveSimon, this));
 
     RCLCPP_INFO(
 		this->get_logger(),
@@ -251,7 +251,7 @@ private:
 	}else{
 	  // After 8 seconds: stop
 	  arreter(); //Steering angle is initialised at 0degs
-	  movement_done = true; //On a finit le movement, faut attendre à nouveau un nouvel movement
+	  //movement_done = true; //On a finit le movement, faut attendre à nouveau un nouvel movement
 	  sequenceStarted = false;
 	  sequenceFinished = true;
 	  ack_msg.movetype = moveType;

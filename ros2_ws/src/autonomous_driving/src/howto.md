@@ -5,21 +5,12 @@ colcon build --packages-up-to <your_package_name>
 
 source install/setup.bash
 
-ros2 run <your_package_name> autonomous_driving
 
-another terminal:
-ros2 topic pub --once /autonomous_command interfaces/msg/AutonomousCommand "{start: true}"
+J'arrive pas avec geivar.launch.py... Faut demander à Raph
+ros2 run can can_rx_node
+ros2 run can can_tx_node
+ros2 run obstacle_stop obstacle_stop_node
+ros2 run autonomous_driving autonomous_driving_node
 
-arreter:
-ros2 topic pub --once /autonomous_command interfaces/msg/AutonomousCommand "{start: false}"
-
-
-Il faut lancer ces nodes en meme temps et en different terminaux:
-- CAN Rx
-- CAN Tx
-- Ultrasonic
-- Motors orders
-
-Maybe need to change something if this file is not found: autonous_driver, just change it to autonomous
-
-Change sequence in autonomous_driving.cpp
+Pour montrer que le ack passe:
+ros2 topic echo /movement_ack

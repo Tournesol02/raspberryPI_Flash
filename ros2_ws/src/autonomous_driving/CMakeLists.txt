@@ -11,21 +11,27 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(interfaces REQUIRED)
+find_package(yaml-cpp REQUIRED)
 
 include_directories(include)
 
-add_executable(autonomous_driving src/autonomous_driving.cpp)
+add_executable(autonomous_driving_node src/autonomous_driving.cpp)
 
-ament_target_dependencies(autonomous_driving
+ament_target_dependencies(autonomous_driving_node
   rclcpp
   interfaces
+  std_msgs
+)
+
+target_link_libraries(autonomous_driving_node
+  yaml-cpp
 )
 
 install(TARGETS
-  autonomous_driving
+  autonomous_driving_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()
-

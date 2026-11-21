@@ -26,10 +26,15 @@ colcon build --packages-select imu_filter_madgwick
 colcon build --packages-select imu_complementary_filter
 colcon build --packages-select simulation
 colcon build --packages-select system_check
+colcon build --packages-select autonomous_driving
+colcon build --packages-select game_ai
+
 ```
 
 3. After the compilation, you have to source the ros environment:
 ```sh
+Pour nous: source ~/Pi4_ros2_ws_Simon/ros2_ws/install/local_setup.bash
+
 source ~/ros2_ws/install/local_setup.bash
 source /opt/ros/humble/setup.bash
 ```

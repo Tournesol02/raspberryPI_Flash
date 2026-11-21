@@ -12,5 +12,7 @@ ros2 run can can_tx_node
 ros2 run obstacle_stop obstacle_stop_node
 ros2 run autonomous_driving autonomous_driving_node
 
+Envoyer un mouvement: ros2 topic pub --once /autonomous_command interfaces/msg/AutonomousCommand "{movetype: 1, movement_done: false}"
+
 Pour montrer que le ack passe:
 ros2 topic echo /movement_ack

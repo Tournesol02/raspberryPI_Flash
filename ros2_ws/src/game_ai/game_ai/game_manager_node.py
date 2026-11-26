@@ -128,6 +128,8 @@ class GameManagerNode(Node):
 
     def recv_autonomous_ack(self, message):
         self.autonomous_ack = message.movement_done
+        self.get_logger().info('Ack received from autonomous')
+
 
 
     def verify_player_sequence(self, message):

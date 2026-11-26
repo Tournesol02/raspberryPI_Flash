@@ -119,7 +119,8 @@ class GameManagerNode(Node):
             move = self.sequence[self.playback_index]
             command = AutonomousCommand()
             #command.start = True
-            command.move = int(move)
+            command.movetype = int(move)
+            command.movement_done = False
             self.command_publisher.publish(command)
             self.autonomous_ack = False
             self.playback_index += 1

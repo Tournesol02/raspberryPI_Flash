@@ -14,6 +14,8 @@
 """"ros2 topic pub --once /game/player_input std_msgs/msg/Int32MultiArray "{data: [2]}" """
 """"ros2 topic pub --once /game/player_input std_msgs/msg/Int32MultiArray "{data: [2, 4]}" """
 """" ... """
+#Send move to perform to autonomous node
+""""ros2 topic pub --once /autonomous_command  interfaces/msg/AutonomousCommand "{movetype: 1, movement_done: false}" """
 import random
 
 import rclpy

@@ -37,6 +37,36 @@ class GameManagerNode(Node):
         self.listen_ai_node_for_start = True
         self.ai_predictions = []
 
+        
+
+        # Evaluate player answer.
+        self.result_publisher = self.create_publisher(
+            Bool, '/game/correct', 10
+        )
+
+
+        # Publish move to do to autonomous node
+
+
+        self.command_publisher = self.create_publisher(
+            AutonomousCommand,
+            '/autonomous_command',
+            10
+        )
+
+        # Get ack from autonomous node
+
+        self.autonomous_ack_subscriber = self.create_subscription(
+            AutonomousCommand,
+            '/autonomous_command',
+            self.check_car_mouvement_performed
+        )
+
+        # get start status
+
+        self.start_subs = self.create_subscription(Bool, '/start_game', self.get_start_status)
+
+
         """
 
         # Publish current sequence: [1], [1, 4], [1, 4, 2], ...
@@ -45,10 +75,7 @@ class GameManagerNode(Node):
         )
         """
 
-        # Evaluate player answer.
-        self.result_publisher = self.create_publisher(
-            Bool, '/game/correct', 10
-        )
+
         """
 
         # Receive player list
@@ -65,17 +92,7 @@ class GameManagerNode(Node):
         )
         """
 
-        self.command_publisher = self.create_publisher(
-            AutonomousCommand,
-            '/autonomous_command',
-            10
-        )
-
-        self.autonomous_ack_subscriber = self.create_subscription(
-            AutonomousCommand,
-            '/autonomous_command',
-            self.check_car_mouvement_performed
-        )
+        
 
         """
         self.ready_publisher = self.create_publisher(
@@ -85,7 +102,7 @@ class GameManagerNode(Node):
         )
         """
 
-        self.get_logger().info('Game manager ready. Send topic /game/start.')
+        
     
     """
 
@@ -99,7 +116,7 @@ class GameManagerNode(Node):
         return response
 
     def add_move(self):
-        """Add one movement to the list."""
+        # Add one movement to the list.
         move = random.randint(1, 4)
         self.sequence.append(move)
 
@@ -135,7 +152,7 @@ class GameManagerNode(Node):
         )
 
     def verify_player_sequence(self, message):
-        """Generate next movement after review"""
+        # Generate next movement after review
         if not self.game_active:
             self.get_logger().warn('No active game. Call /game/start first.')
             return
@@ -211,7 +228,7 @@ class GameManagerNode(Node):
 
 
 
-        while(self.game_running)
+        while(self.game_running):
 
             self.generate_sequence(4)
 
@@ -274,25 +291,37 @@ class GameManagerNode(Node):
     
     # clear sequence moves for a new sequence to generate
 
-    def clear_sequence():
+    def clear_sequence(self):
 
         self.sequence = []
 
 
     # wait for run
 
-    def wait_for_run():
+    def wait_for_run(self):
 
-        while(not self.game_running):
+        # read game_running value, true or false
+
+        while(not self.check_start()):
 
             time.sleep(1)
+
+        # launch game 
+
         self.run_game()
+
+    # function that 
+
+    def get_start_status(self, message):
+
+        self.game_running = message.
     
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = GameManagerNode()
+    self.get_logger().info('Game manager ready. Send topic /game/start.')
 
     try:
         rclpy.spin(node)

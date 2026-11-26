@@ -66,7 +66,7 @@ class GameManagerNode(Node):
         self.ack_autonomous = self.create_subscription(
             AutonomousCommand,
             '/autonomous_command',
-            10
+            self.recv_autonomous_ack
         )
 
         self.ready_publisher = self.create_publisher(
@@ -123,8 +123,8 @@ class GameManagerNode(Node):
                 f'Playing move {self.playback_index}/{len(self.sequence)}: {move}'
             )
 
-    def recv_ack(self, message):
-        self.ack = message.movement_done
+    def recv_autonomous_ack(self, message):
+        self.autonomous_ack = message.movement_done
 
 
     def verify_player_sequence(self, message):

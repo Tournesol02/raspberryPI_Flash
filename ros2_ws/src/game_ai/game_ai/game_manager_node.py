@@ -32,7 +32,6 @@ class GameManagerNode(Node):
 
         self.sequence = []
         self.game_running = False
-        self.expected_step
         self.autonomous_ack  = False
 
         # Publish current sequence: [1], [1, 4], [1, 4, 2], ...

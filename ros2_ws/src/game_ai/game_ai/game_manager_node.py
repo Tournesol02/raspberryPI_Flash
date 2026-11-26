@@ -314,14 +314,14 @@ class GameManagerNode(Node):
 
     def get_start_status(self, message):
 
-        self.game_running = message.
+        self.game_running = message.data
     
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = GameManagerNode()
-    self.get_logger().info('Game manager ready. Send topic /game/start.')
+    node.get_logger().info('Game manager ready. Send topic /game/start.')
 
     try:
         rclpy.spin(node)

@@ -130,7 +130,7 @@ class GameManagerNode(Node):
 
     def verify_player_sequence(self, message):
         """Generate next movement after review"""
-        if not self.game_active:
+        if not self.game_running:
             self.get_logger().warn('No active game. Call /game/start first.')
             return
 
@@ -148,7 +148,7 @@ class GameManagerNode(Node):
         self.get_logger().info('Correct sequence!')
 
         if len(self.sequence) >= self.MAX_STEPS:
-            self.game_active = False
+            self.game_running = False
             self.get_logger().info('Game finished: 20 rounds completed!')
             return
 

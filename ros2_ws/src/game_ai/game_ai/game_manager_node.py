@@ -66,7 +66,8 @@ class GameManagerNode(Node):
         self.ack_autonomous = self.create_subscription(
             AutonomousCommand,
             '/autonomous_command',
-            self.recv_autonomous_ack
+            self.recv_autonomous_ack,
+            10
         )
 
         self.ready_publisher = self.create_publisher(

@@ -67,7 +67,7 @@ class GameManagerNode(Node):
 
         self.ack_autonomous = self.create_subscription(
             AutonomousCommand,
-            '/autonomous_command',
+            '/movement_ack',
             self.recv_autonomous_ack,
             10
         )
@@ -115,12 +115,13 @@ class GameManagerNode(Node):
     def publish_next_move(self):
         ## Sending the initial sequence is working, 
         ## it does not advance to next movement, due to not yet implemented feedback logic in 
-        if self.autonomous_ack :
+        if self.autonomous_ack or self.playback_index == 0:
             move = self.sequence[self.playback_index]
             command = AutonomousCommand()
             #command.start = True
             command.move = int(move)
             self.command_publisher.publish(command)
+            self.autonomous_ack = False
             self.playback_index += 1
             self.get_logger().info(
                 f'Playing move {self.playback_index}/{len(self.sequence)}: {move}'
@@ -128,8 +129,7 @@ class GameManagerNode(Node):
 
     def recv_autonomous_ack(self, message):
         self.autonomous_ack = message.movement_done
-        if autonomous_ack:
-            self.get_logger().info('Ack received from autonomous')
+        self.get_logger().info('Ack received from autonomous')
 
 
 

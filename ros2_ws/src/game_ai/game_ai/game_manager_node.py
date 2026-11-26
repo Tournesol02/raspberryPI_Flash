@@ -240,9 +240,10 @@ def main(args=None):
     rclpy.init(args=args)
     node = GameManagerNode()
     node.get_logger().info('Game manager ready. Waiting for run or Send topic /game/start.')
-    node.wait_for_run()
+    
     try:
         rclpy.spin(node)
+        node.wait_for_run()
     except KeyboardInterrupt:
         pass
     finally:

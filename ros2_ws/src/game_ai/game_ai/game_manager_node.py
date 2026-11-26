@@ -16,7 +16,7 @@
 """" ... """
 #Send move to perform to autonomous node
 """"ros2 topic pub --once /autonomous_command  interfaces/msg/AutonomousCommand "{movetype: 1, movement_done: false}" """
-import random, time
+import random
 
 import rclpy
 from rclpy.node import Node
@@ -27,7 +27,7 @@ from interfaces.msg import AutonomousCommand
 
 
 class GameManagerNode(Node):
-    MAX_STEPS = 3
+    MAX_STEPS = 20
 
     def __init__(self):
         super().__init__('game_manager_node')
@@ -83,19 +83,52 @@ class GameManagerNode(Node):
     def start_game(self, request, response):
         self.sequence = []
         self.game_running = True
+        self.add_move()  # First round generate one move
 
         response.success = True
         response.message = 'Game started. First sequence published.'
         return response
 
-    # get autonomous node ack
+    def add_move(self):
+        """Add one movement to the list."""
+        
+        self.sequence.append(self.get_step())
+
+        message = Int32MultiArray()
+        message.data = self.sequence.copy()
+        self.sequence_publisher.publish(message)
+
+        self.get_logger().info(
+            f'Round {len(self.sequence)} - sequence: {self.sequence}'
+        )
+        self.begin_playback()
+
+    def begin_playback(self):
+        self.waiting_for_input = False #CHANGE
+        self.playing_sequence = True
+        self.playback_index = 0
+        self.ready_publisher.publish(Bool(data=False))
+
+        # Publish Moves in Car command
+        self.publish_next_move()
+
+    def publish_next_move(self):
+        ## Sending the initial sequence is working, 
+        ## it does not advance to next movement, due to not yet implemented feedback logic in 
+        if self.autonomous_ack or self.playback_index == 0:
+            move = self.sequence[self.playback_index]
+            self.publish_move_to_perform(move)
+            self.autonomous_ack = False
+            self.playback_index += 1
+            self.get_logger().info(
+                f'Playing move {self.playback_index}/{len(self.sequence)}: {move}'
+            )
 
     def recv_autonomous_ack(self, message):
         self.autonomous_ack = message.movement_done
         self.get_logger().info('Ack received from autonomous')
 
 
-    # check if player performed sequence is same
 
     def verify_player_sequence(self, message):
         """Generate next movement after review"""
@@ -127,8 +160,17 @@ class GameManagerNode(Node):
 
     def publish_step_correctness(self, correct):
 
-        message = Bool(data=correct)
-        self.ready_publisher.publish(message)
+        
+        pass
+
+    # the callback function for Game launch subscription, store in game_active, communicate with AI node
+    # create self.start : bool
+    
+    def check_start(self, message):
+
+        
+
+        pass
 
 
     # callback that store in Node attribute the AI detected movement and, later, in another function, compare to expected movement.
@@ -148,17 +190,7 @@ class GameManagerNode(Node):
 
     def run_game(self):
 
-        seq_move_number = 1
-        self.add_move_to_seq()
-
-        while len(self.sequence) <= self.MAX_STEPS:
-
-            for move in self.sequence:
-
-                self.publish_move_to_perform(move)
-                self.wait_for_ack()
-                self.ack_autonomous = False
-
+        pass
     
 
     # publish on the movement_to_perform topic the move to perform, would be received by Auto and Screen Node
@@ -175,75 +207,24 @@ class GameManagerNode(Node):
 
     def get_step(self):
 
-        return random.randint(1,4)
+        return random.randint(1, 4)
 
-    # add move to the whole sequence
 
-    def add_move_to_seq(self):
+    # called when autonomous node sent his acknowledgement, then check if move_done is true 
 
-        move = self.get_step()
-        self.sequence.append(move)
 
-        # developper help
+    def check_car_mouvement_performed(self, message):
 
-        message = Int32MultiArray()
-        message.data = self.sequence.copy()
-        self.sequence_publisher.publish(message)
-
-        self.get_logger().info(
-            f'Round {len(self.sequence)} - sequence: {self.sequence}'
-        )
-
+        pass
     
-    # clear sequence moves for a new sequence to generate
-
-    def clear_sequence(self):
-
-        self.sequence = []
-
-
-    # wait for run
-
-    def wait_for_run(self):
-
-        self.get_logger().info('WAITING FOR RUN')
-
-        # read game_running value, true or false
-
-        while(not self.game_running):
-
-            time.sleep(1)
-
-        # launch game 
-
-        self.get_logger().info('RUNNING GAME MANAGER')
-
-        self.run_game()
-
-    
-    # wait for ack
-
-    def wait_for_ack(self):
-
-        self.get_logger().info('WAITING FOR ACK')
-
-        # read game_running value, true or false
-
-        while(not self.ack_autonomous):
-
-            time.sleep(0.2)
-        
-        self.get_logger().info('RECEIVED ACK')
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = GameManagerNode()
-    node.get_logger().info('Game manager ready. Waiting for run or Send topic /game/start.')
-    
+
     try:
         rclpy.spin(node)
-        node.wait_for_run()
     except KeyboardInterrupt:
         pass
     finally:

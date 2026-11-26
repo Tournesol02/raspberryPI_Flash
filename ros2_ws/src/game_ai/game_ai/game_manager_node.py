@@ -210,7 +210,7 @@ class GameManagerNode(Node):
 
         # read game_running value, true or false
 
-        while(not self.game_running()):
+        while(not self.game_running):
 
             time.sleep(1)
 
